@@ -240,7 +240,7 @@ function globalCss(theme) {
     * { animation: none !important; transition: none !important; }
   }
 `;
-
+}
 /* ============================================================
    REUSABLE UI ATOMS
 ============================================================ */
@@ -1204,11 +1204,12 @@ function CrmDashboard() {
   );
 }
 
+
 /* ============================================================
    MAIN APP
 ============================================================ */
 const trunc = (s="", n=26) => s.length > n ? s.slice(0,n)+"…" : s;
-}
+
 export default function WorkflowBuilder() {
   const location = useLocation();
   const navigate = useNavigate();
